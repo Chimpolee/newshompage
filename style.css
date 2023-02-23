@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Bilbo+Swash+Caps&family=Dancing+Script:wght@400;700&family=Josefin+Sans&family=Lexend+Deca:wght@700&family=Mansalva&family=Raleway:wght@200&family=Shadows+Into+Light&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background: white;
+    padding: 60px 10%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 0 15px;
+}
+nav ul li a{
+    color: black;
+}
+nav ul li a:hover{
+    color: hsl(31, 77%, 52%);
+}
+button.icon{
+    display: none;
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    margin: auto;
+    grid-template-areas: 
+        'a a b'
+        'c d b';
+    padding-bottom: 30px;
+        
+}
+.item1{
+ grid-area: a;
+}
+
+.item2{
+    grid-area: c;
+   
+    padding: 0 10px;
+}
+.item3{
+    grid-area: d;
+    
+    padding: 0 10px;
+}
+.item4{
+    grid-area: b;
+    background-color: hsl(236, 100%, 13%);
+    padding: 20px;
+    color: white;
+}
+p{
+    font-size: 15px;
+}
+article{
+    padding: 20px 0;
+}
+hr{
+    height: 1px;
+}
+h2{
+    color: hsl(0, 0%, 77%);
+}
+button.read{
+    font-family:'Lexend Deca', sans-serif;
+    padding: 6px 15px;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    background-color: rgb(253, 106, 53);
+    color: white;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+button:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+.flexbox-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.image{
+    width: 110px;
+    padding: 20px;
+}
+.container{
+    display: flex;
+}
+section{
+    padding-top: 15px;
+}
+@media screen and (max-width: 600px){
+    nav ul li{
+        display: none;
+    }
+    button.icon{
+        display: inline-block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    body{
+        font-family: 'Lexend Deca', sans-serif;
+        background: white;
+        padding: 30px 5%;
+    }
+
+    .item1{grid-area: 1/1/2/4;}
+    .item2{grid-area: 2/1/3/4;}
+    .item3{grid-area: 3/1/4/4;}
+    .item4{grid-area: 4/1/5/4;}
+
+    .flexbox-container{
+        flex-direction: column;
+    }
+    .item1 img{
+        height: 250px;
+    }
+}
