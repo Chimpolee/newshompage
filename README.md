@@ -1,2 +1,0 @@
-# newshompage
-News Homepage challenge
